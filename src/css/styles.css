@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 50px;
+}
+
+:root {
+    --color1: #8E7BEF;
+    --color2: #5D3BEF;
+    --color3: #F9F6FF;
+    --color4: #222222;
+    --color5: #423F40;
+    --color6: #FFFFFF;
+    --color7: #a2a2a2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    user-select: none;
+}
+
+.Montserrat__Title {
+    font-size: 50px;
+}
+
+.Montserrat__Sub-title {
+    font-size: 24px;
+}
+
+.Montserrat__Sub-secction {
+    font-weight: 20px;
+}
+
+.Montserrat__Caption {
+    font-weight: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+}
+
+.navbar {
+    background-color: var(--color6);
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 3rem;
+    width: 100%;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu p {
+    color: var(--color1);
+}
+
+.icon__menu {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    
+    .navbar {
+        background-color: var(--color1);
+    }
+
+    .icon__menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        position: fixed;
+        min-height: 50vh;
+        background-color: var(--color1);
+        right: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        top: 50px;
+        right: -100%;
+        transition: right 0.5s;
+    }
+
+    .menu a:hover {
+        color: var(--color6);
+    }
+
+    .menu p {
+        color: var(--color6);
+    }
+
+    .menu p:hover {
+        color: var(--color4);
+    }
+
+    .menu__show {
+        right: 0;
+    }
+}
+
+.img__fotoMovil{
+    width: 100%;
+}
+
+.img_foto__web {
+    display: none;
+}
+
+.container {
+    background-color: var(--color6);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.header p {
+    color: var(--color7);
+    font-weight: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.contacto{
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    height: 50px;
+}
+
+.contacto > p {
+    color: var(--color6);
+}
+
+.contacto i {
+    margin-right: 2rem;
+}
+
+.info {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.info p {
+    color: var(--color7);
+    font-weight: 20px;
+}
+
+.title__habilidades {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.box__habilidades {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    
+}
+.box__habilidad{
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.head__habilidad {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 0 1rem;
+}
+
+.body__habilidad {
+    text-align: left;
+    color: var(--color7);
+    padding: 1rem;
+}
+
+.title__experiencia {
+    text-align: center;
+}
+
+.experiencias {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info__experiencia {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+
+.body__experiencia p {
+    color: var(--color7);
+}
+
+.year__experiencia {
+    padding: 2rem;
+}
+
+.portafolio {
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.title__portafolio {
+    text-align: center;
+}
+
+.portafolio img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.footer__contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.img__contacto {
+    padding: 2rem;
+}
+
+.footer__contacto p {
+    color: var(--color7);
+}
+
+.fin {
+    color: var(--color1);
+    padding: 3rem;
+}
+
+@media (min-width: 700px) {
+
+    .home {
+        display: flex;
+        gap: 1rem;
+        padding-top: 4rem;
+        justify-content: center;
+    }
+
+    .img__fotoMovil{
+        display: none;
+    }
+    
+    .img_foto__web {
+        display: block;
+    }
+
+    .img__vector {
+        position: relative;
+    }
+
+    .img__fotoDesktop {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+    }
+
+    .header {
+        display: flex;
+        margin: auto 0;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 70px;
+    }
+
+    .header p {
+        font-size: 20px;
+    }
+
+    .box__habilidades {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
+    }
+
+    .experiencias {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .year__experiencia {
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+
+    .portafolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 10rem;
+    }
+
+    .footer__contacto {
+        gap: 1rem;
+    }
+
+    .img__contacto {
+        background-color: var(--color3);
+        padding: 2.5rem;
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+
+}
