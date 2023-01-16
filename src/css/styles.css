@@ -58,6 +58,7 @@ img {
 .navbar {
     background-color: var(--color6);
     position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: flex-end;
     align-items: center;
